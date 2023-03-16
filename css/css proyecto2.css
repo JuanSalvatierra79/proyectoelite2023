@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* comienzo index y nav */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
+   }
+
+main {
+  flex-grow: 1; }
+
+.hero-image {
+  min-height: 100vh;
+  background-image: url("../img/heroimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #000000; }
+  .hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center; }
+
+
+.main{
+  background-color: black;
+}
+
+h1{
+    color: #F2CE00;
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;}
+
+  
+.head {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+background-color: black;
+}
+  
+
+.container-fluid {
+    list-style-type: none;
+    background-color: #000000;
+    padding: 0;
+    color:#F2CE00;
+    }
+
+
+.navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #000000;
+      float: right;
+      }
+      
+.nav-item {
+      display: inline-block;
+      padding: .5rem; }
+    
+.nav-link {
+  color: #F2CE00;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px; }
+
+.nav-item a:hover {
+  color: black;
+  background-color: #F2CE00;
+  border-radius: 100%; }
+
+
+/* comienzo card footer redes sociales */
+
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .social ul {
+      display: flex;
+      flex-direction: row; }
+      .social ul li {
+        list-style-type: none; }
+        .social ul li img {
+          background-color: #F2CE00; }
+  
+  .social p {
+    color:#F2CE00;
+    flex: auto; }
+
+
+/* comienzo card contacto */
+
+section div {
+  border: solid 1px;
+  border-color: darkgoldenrod;
+  width: 450px;
+  padding: 8px; }
+  section div img {
+    width: 100%; }
+   
+    .contacto {
+      margin-top: 50px;
+      width: 450px;
+      border-color: #000000; }
+    
+      .mapa {
+      margin-top: 50px;
+      margin-right: 50px;
+      width: fit-content;
+      border-color: #000000; }
+    
+    .container6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas: ". .";
+        margin-top: 20px;
+        margin-bottom: 30px;
+        justify-items: center; }
+
+    .galeriagrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        border: darkgoldenrod;
+        margin-bottom: 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+          ". . ."
+          ". . .";
+      }
+      
+    
+    .bordergaleria:hover {
+      border: none;
+      filter:sepia(1);
+      transition: all 0.1s ease;
+      margin: 2px; }
+    
+    
+    h2 {
+      color: yellow;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 50px;
+      text-align: center; }
+
+    h3{
+      color: darkgoldenrod;
+      font-family: "Roboto", sans-serif;
+      text-align: center; }
+
+
+      /* comienzo card sedes */
+
+    .galeriasedes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        margin-bottom: 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". ."
+          ". ."
+          ". .";
+        
+      } 
+
+      .galeriasedes div {
+        width: 302px;
+        height: 301px;
+        padding: 0px;
+        margin-left: 50px;
+      }
+
+      .galeriasedes img{
+          object-fit:fill;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+          padding: 0px;
+          object-position: center center;
+      }
+
+    /* comienzo card carreras */
+
+      .carousel-item.active img {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            
+            }
+
+
+    /* comienzo card gimnasio */
+
+    h3{
+      color: darkgoldenrod;
+      font-family: "Roboto", sans-serif;
+      text-align: center; }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 20px 20px;
+      grid-template-areas: ". ."
+     ". ."
+     ". .";
+     margin-top: 30px; 
+     margin-bottom: 40px;
+      justify-items: center; }
+      .container p {
+        text-align: left;
+        color: aliceblue;
+        font-family: "Roboto", sans-serif; }
+        .container p img:hover {
+          transform: scale(1.2, 1.2); }
