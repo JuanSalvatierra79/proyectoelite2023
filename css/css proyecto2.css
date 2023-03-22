@@ -1,4 +1,8 @@
-@charset "UTF-8";
+* {
+	margin:0;
+	padding:0;
+  }
+
 /* comienzo index y nav */
 
 body {
@@ -236,3 +240,42 @@ section div {
         font-family: "Roboto", sans-serif; }
         .container p img:hover {
           transform: scale(1.2, 1.2); }
+
+/* styles media query menú */
+  
+@media only screen and (max-width: 768px) {
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } 
+
+    .social ul {
+      display: flex;
+      flex-direction: row;
+      padding-left: 44%; }  }
+       
+  
+    .social p {
+      display: none; }
+
+      
+/* styles media query sedes */
+
+@media only screen and (max-width: 768px) {
+
+  .galeriasedes {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}  
