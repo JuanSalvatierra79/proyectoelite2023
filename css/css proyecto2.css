@@ -4,6 +4,10 @@
   }
 
 /* comienzo index y nav */
+.Logo {
+  background-color: black;
+  background-image: url("../img/logo\ elite.png"); }
+
 
 body {
   display: flex;
@@ -20,7 +24,6 @@ main {
   background-image: url("../img/heroimage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   color: #000000; }
   .hero-image div {
     min-height: inherit;
@@ -86,23 +89,10 @@ background-color: black;
 
 /* comienzo card footer redes sociales */
 
+footer h3 {
+  font-size: medium;
+}
 
-  .social {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .social ul {
-      display: flex;
-      flex-direction: row; }
-      .social ul li {
-        list-style-type: none; }
-        .social ul li img {
-          background-color: #F2CE00; }
-  
-  .social p {
-    color:#F2CE00;
-    flex: auto; }
 
 
 /* comienzo card contacto */
@@ -173,7 +163,20 @@ section div {
       font-family: "Roboto", sans-serif;
       text-align: center; }
 
-
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap; }
+       .social ul {
+          display: flex;
+          flex-direction: row;  }
+          .social ul li {
+            list-style-type: none; }
+            .social ul li img {
+              background-color: darkgoldenrod; }
+      
+     
       /* comienzo card sedes */
 
     .galeriasedes{
@@ -279,3 +282,81 @@ section div {
       ".";
   }
 }  
+
+/* styles media query gimnasio */
+
+
+@media only screen and (max-width: 768px) {
+  
+  .container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+  .container div {
+    width: 500px;
+    height: 400px;
+  }
+   }
+
+   /* styles media query contacto */
+
+   @media only screen and (max-width: 768px) {
+
+   .container6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "."
+ "."; }
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; }
+  .galeriagrid {
+    display: grid;
+    align-content: center;
+    margin-left: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "."
+ "."
+ "."
+ "."
+ "."
+ "."
+ "."
+ "."; }  
+ }
+
+    /* styles media query carreras */
+
+    @media only screen and (max-width: 768px) {
+      
+      .carousel-inner img{
+          width: 400px;
+          height: 350px;
+        }
+    
+
+    }
