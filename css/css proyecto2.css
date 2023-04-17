@@ -259,9 +259,12 @@ section div {
       padding-left: 44%; }  }
        
   
+@media screen and (max-width: 480px) {
     .social h3 {
       display: none; }
 
+ 
+ }     
       
 /* styles media query sedes */
 
