@@ -45,45 +45,40 @@ h1{
 
   
 .head {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-text-align: center;
-background-color: black;
-}
-  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; }
 
-.container-fluid {
-    list-style-type: none;
-    background-color: #000000;
-    padding: 0;
-    color:#F2CE00;
+
+    .container-fluid {
+      list-style-type: none;
+      background-color: #000000;
+      padding: 0;
+      color:#F2CE00;
     }
 
 
-.navbar-nav {
+    .navbar-nav {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: #000000;
-      float: right;
-      }
-      
-.nav-item {
+      background-color: #000000; }
+    
+    .nav-item {
       display: inline-block;
       padding: .5rem; }
     
-.nav-link {
-  color: #F2CE00;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px; }
+    .nav-link {
+      color: darkgoldenrod;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px; }
+    
 
-.nav-item a:hover {
-  color: black;
-  background-color: #F2CE00;
-  border-radius: 100%; }
+    .nav-item a:hover {
+      color: black;
+      background-color: #F2CE00;
+      border-radius: 100%; }
 
 
 /* comienzo card footer redes sociales */
@@ -99,10 +94,11 @@ footer h3 {
 section div {
   border: solid 1px;
   border-color: darkgoldenrod;
-  width: 450px;
-  padding: 8px; }
+  width: 313px;
+  padding: 5px;
+  align-content: center; }
   section div img {
-    width: 100%; }
+    width: 300px; }
    
     .contacto {
       margin-top: 50px;
@@ -130,8 +126,9 @@ section div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px 1px;
+        gap: 2px 2px;
         border: darkgoldenrod;
+        margin-left: 8%;        
         margin-bottom: 30px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -236,6 +233,18 @@ section div {
      margin-top: 30px; 
      margin-bottom: 40px;
       justify-items: center; }
+      .containergym div{
+        border: solid 1px;
+        border-color: darkgoldenrod;
+        width: 500px;
+        padding: 5px;
+        align-content: center; }
+        .containergym div img{
+          width: 490px;
+        }
+        
+        section div img {
+          width: 300px; }
       .containergym p {
         text-align: left;
         color: aliceblue;
@@ -243,29 +252,34 @@ section div {
         .containergym p img:hover {
           transform: scale(1.2, 1.2); }
 
+
+          
+
 /* styles media query menú */
   
+
 @media only screen and (max-width: 768px) {
 
-  .head {
+   .head {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; } 
+    justify-content: space-between; } 
 
   .social ul {
       display: flex;
       flex-direction: row;
       padding-left: 44%; }  
+
+    .navbar{
+      text-align: center;
+       } 
     
   .hero-image{
     background-image: url(../img/heroimage5.jpg);
     
   } 
   
-  .navbar{
-    text-align: center;
-   }
+
     }
 
   
@@ -313,7 +327,7 @@ section div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1% 1%;
+    gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas:
       "."
@@ -330,10 +344,12 @@ section div {
       ".";
   }
   .containergym div {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
   }
+
+  
    }
+
 
    /* styles media query contacto */
 
